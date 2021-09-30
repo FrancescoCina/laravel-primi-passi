@@ -23,3 +23,16 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+
+Route::get('/contatti', function () {
+
+    $data = [
+        'contacts' => [
+            'mail' => 'fra@gmail.com',
+            'phone' => '3354512365',
+            'address' => 'Viale Mazzini',
+        ]
+    ];
+    return view('contacts', $data);
+})->name('contacts');
