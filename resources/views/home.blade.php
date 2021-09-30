@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <h1>Hello World!!</h1>
+    <h1>Benvenuto {{ $name }} {{ $lastname }}</h1>
+    <h3>Vivi a {{ $city }}</h3>
+    <h5>Hai {{ $age }} anni</h5>
 </body>
 
 </html>
