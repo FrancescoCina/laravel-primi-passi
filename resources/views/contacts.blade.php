@@ -9,11 +9,21 @@
 </head>
 
 <body>
+    <header>
+        <ul>
+            <li>
+                <a href="{{ route('home') }}">Home</a>
+            </li>
+            <li><a href="{{ route('history') }}">Storia</a></li>
+        </ul>
+    </header>
     <div>
         <h1>I miei contatti</h1>
         <ul>
             @forelse ($contacts as $contact)
-            <li>{{ $contact }}</li>
+            <li>
+                {{ $contact }}
+            </li>
             @empty
             <p>No contacts</p>
             @endforelse

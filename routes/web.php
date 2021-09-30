@@ -22,10 +22,10 @@ Route::get('/', function () {
         'age' => 26,
     ];
     return view('home', $data);
-});
+})->name('home');
 
 
-Route::get('/contatti', function () {
+Route::get('/contacts', function () {
 
     $data = [
         'contacts' => [
@@ -36,3 +36,15 @@ Route::get('/contatti', function () {
     ];
     return view('contacts', $data);
 })->name('contacts');
+
+
+
+Route::get('/history', function () {
+
+
+    $data = [
+        'title' => 'La storia',
+        'paragraph' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facere tempore voluptatem voluptas doloribus qui nemo non error perferendis, explicabo sed! Ullam a, eum omnis veritatis inventore architecto enim doloribus!',
+    ];
+    return view('history', $data);
+})->name('history');
